@@ -38,13 +38,13 @@ const Card = ({ data, reference }) => {
         <FaRegEdit onClick={EditThis} />
       </div>
       {isEditing ? (
-        <input
+        <textarea
           type="text"
           value={editedText}
           onChange={handleTextChange}
           onBlur={handleBlur}
           onKeyDown={handleKeyDown}
-          className="mt-5 text-sm leading-tight font-semibold w-full bg-transparent border-b-2 border-white outline-none"
+          className="mt-5 text-sm leading-tight font-semibold w-full bg-transparent border-b-2 border-white outline-none overflow-hidden"
           autoFocus
         />
       ) : (

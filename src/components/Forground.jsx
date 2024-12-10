@@ -6,19 +6,19 @@ const Forground = () => {
 
   const data = [
     {
-      desc: "This is the OG card that is created before any other card.",
+      desc: "This is the first card that is created before any other card.",
       filesize: "0.8 mb",
       close: true,
       tag: { isOpen: false, tagTitle: "Download Now", tagColor: "green" },
     },
     {
-      desc: "This is the second OG card that is created before any other card.",
+      desc: "This is the second card that is created before any other card.",
       filesize: "0.8 mb",
       close: false,
       tag: { isOpen: true, tagTitle: "Download Now", tagColor: "indianred" },
     },
     {
-      desc: "This is the third OG card that is created before any other card.",
+      desc: "This is the third card that is created before any other card.",
       filesize: "0.8 mb",
       close: true,
       tag: { isOpen: true, tagTitle: "Upload", tagColor: "purple" },

@@ -35,7 +35,7 @@ const Card = ({ data, reference }) => {
       whileDrag={{ scale: 1.1 }}
       dragElastic={0.5}
       dragTransition={{ bounceStiffness: 100, bounceDamping: 30 }}
-      className="relative flex-shrink-0 lg:w-56 lg:h-72 w-40 h-60 px-5 py-6 z-[5] text-white rounded-[30px] bg-zinc-900/80 overflow-hidden backdrop-blur-sm m-0"
+      className="relative flex-shrink-0 lg:w-56 lg:h-72 w-40 h-60 px-5 py-6 z-[5] text-white rounded-[30px] bg-zinc-900/80 overflow-hidden backdrop-blur-sm"
     >
       <div className="flex justify-between items-center">
         <MdDeleteForever

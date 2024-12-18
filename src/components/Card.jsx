@@ -35,7 +35,7 @@ const Card = ({ data, reference }) => {
       whileDrag={{ scale: 1.1 }}
       dragElastic={0.5}
       dragTransition={{ bounceStiffness: 100, bounceDamping: 30 }}
-      className="relative flex-shrink-0 w-60 h-72 px-8 py-10 text-white rounded-[30px] bg-zinc-900/80 overflow-hidden backdrop-blur-sm"
+      className="relative flex-shrink-0 lg:w-56 lg:h-72 w-44 h-60 px-8 py-6 text-white rounded-[30px] bg-zinc-900/80 overflow-hidden backdrop-blur-sm"
     >
       <div className="flex justify-between items-center">
         <MdDeleteForever
@@ -51,14 +51,16 @@ const Card = ({ data, reference }) => {
           onChange={handleTextChange}
           onBlur={handleBlur}
           onKeyDown={handleKeyDown}
-          className="mt-5 text-sm leading-tight font-semibold w-full bg-transparent border-b-2 border-white outline-none overflow-hidden"
+          className="mt-5 w-44 h-20 text-sm text-wrap leading-tight font-semibold whitespace-pre-wrap break-words bg-transparent border-b-2 border-white outline-none overflow-y-auto scrollbar-transparent"
           autoFocus
         />
       ) : (
-        <p className="mt-5 text-sm leading-tight font-semibold">{editedText}</p>
+        <p className="mt-2 w-32 h-24 lg:w-44 lg:h-36 text-sm leading-tight font-semibold break-words overflow-y-auto scrollbar-transparent">
+          {editedText}
+        </p>
       )}
       <div className="footer absolute bottom-0 w-full left-0">
-        <div className="flex justify-between items-center py-3 px-8 mb-3">
+        <div className="flex justify-between items-center py-2 px-8">
           <h4>{data.filesize}</h4>
           <span
             className="text-xl cursor-pointer"

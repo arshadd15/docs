@@ -9,7 +9,7 @@ const Forground = () => {
   return (
     <div
       ref={ref}
-      className="fixed top-0 left-0 z-[3] w-full h-full flex gap-10 flex-wrap p-5"
+      className="fixed top-0 left-0 z-[3] w-full h-full flex flex-wrap p-3 lg:p-5 gap-6 overflow-y-auto overflow-x-hidden scrollbar-transparent"
     >
       {docs.map((item, index) => (
         <Card key={index} data={item} reference={ref} />

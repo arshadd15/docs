@@ -23,7 +23,19 @@ const App = () => {
   };
 
   const addDoc = (doc) => {
-    const colors = ["green", "blue", "orange", "pink", "purple"];
+    const colors = [
+      "maroon",
+      "navy",
+      "olive",
+      "teal",
+      "#C75C5C",
+      "#D17C8C",
+      "#5C6D7A",
+      "#6A7C6C",
+      "#D99D73",
+      "#D59C64",
+      "#7A9E8A",
+    ];
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     setDocs((prev) => [
       ...prev,
@@ -88,7 +100,7 @@ const App = () => {
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="absolute top-20 right-5 flex bg-white p-4 rounded-lg shadow-lg z-20"
+            className="absolute top-20 right-5 flex bg-white p-4 rounded-lg shadow-lg z-20 w-full sm:w-[320px] md:w-[400px]"
           >
             <input
               type="text"

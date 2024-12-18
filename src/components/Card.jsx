@@ -35,7 +35,7 @@ const Card = ({ data, reference }) => {
       whileDrag={{ scale: 1.1 }}
       dragElastic={0.5}
       dragTransition={{ bounceStiffness: 100, bounceDamping: 30 }}
-      className="relative flex-shrink-0 lg:w-56 lg:h-72 w-40 h-60 px-5 py-6 z-[5] text-white rounded-[30px] bg-zinc-900/80 overflow-hidden backdrop-blur-sm"
+      className="relative flex-shrink-0 lg:w-56 lg:h-72 w-40 h-60 px-5 py-6 z-[5] text-white rounded-[30px] bg-zinc-900/80 overflow-hidden backdrop-blur-sm m-0"
     >
       <div className="flex justify-between items-center">
         <MdDeleteForever
@@ -51,11 +51,11 @@ const Card = ({ data, reference }) => {
           onChange={handleTextChange}
           onBlur={handleBlur}
           onKeyDown={handleKeyDown}
-          className="mt-5 w-32 lg:w-44 min-h-16 text-sm text-wrap leading-tight font-semibold whitespace-pre-wrap break-words bg-transparent border-b-2 border-white outline-none overflow-y-auto scrollbar-transparent"
+          className="mt-2 w-32 lg:w-48 min-h-16 text-sm text-wrap leading-tight font-semibold whitespace-pre-wrap break-words bg-transparent border-b-2 border-white outline-none overflow-y-auto scrollbar-transparent"
           autoFocus
         />
       ) : (
-        <p className="mt-2 w-32 max-h-24 lg:w-44 lg:h-36 text-sm leading-tight font-semibold break-words overflow-y-auto scrollbar-transparent">
+        <p className="mt-2 w-32 max-h-24 lg:w-48 lg:max-h-36 text-sm leading-tight font-semibold break-words overflow-y-auto scrollbar-transparent">
           {editedText}
         </p>
       )}
